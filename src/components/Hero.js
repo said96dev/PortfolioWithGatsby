@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-import { titleAnim, fade, photoAnim } from '../animation/animation'
+import { titleAnim, fade } from '../animation/animation'
 import { motion } from 'framer-motion'
 
 const Hero = ({ showHero }) => {
