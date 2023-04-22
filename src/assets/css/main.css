@@ -290,6 +290,7 @@ Hero
 */
 
 /* underline added to globals */
+
 .hero {
   margin-top: -5rem;
   padding-top: 5rem;
@@ -301,6 +302,7 @@ Hero
   height: 100%;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .hero .underline {
@@ -378,6 +380,7 @@ Hero
 /* section */
 .section {
   padding: 5rem 0;
+  position: relative;
 }
 
 .section-center {
@@ -439,6 +442,7 @@ Footer
   text-align: center;
   display: grid;
   place-items: center;
+  position: relative;
 }
 .footer h4 {
   margin-top: 0.5rem;
@@ -564,7 +568,9 @@ Projects
 */
 .projects {
   background: var(--clr-white);
+  overflow: hidden;
 }
+
 .projects .section-title {
   padding-top: 5rem;
 }

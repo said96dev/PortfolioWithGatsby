@@ -44,7 +44,7 @@ export const query = graphql`
           description
         }
         image {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
+          gatsbyImageData(layout: CONSTRAINED)
         }
       }
       totalCount
