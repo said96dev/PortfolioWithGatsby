@@ -13,5 +13,6 @@ const skills = [
   'Scss',
   'GatsbyJs',
   'Strapi',
+  'Framer-motion',
 ]
 export default skills
