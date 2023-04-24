@@ -12,6 +12,6 @@ const skills = [
   'MUI',
   'Scss',
   'GatsbyJs',
-  'strapi',
+  'Strapi',
 ]
 export default skills
