@@ -1,1 +1,4 @@
+- Update the Hero Section
+- Update the Experience Section
+- add New Project
 - Update the TressJs 3D Project Url

@@ -2,7 +2,6 @@ import React from 'react'
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
 import { useCallback } from 'react'
-import particlesConfig from '../animation/particlesjs-config'
 const Particle = () => {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine)
@@ -17,7 +16,7 @@ const Particle = () => {
   }, [])
   return (
     <Particles
-      id='tsparticles'
+      id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{

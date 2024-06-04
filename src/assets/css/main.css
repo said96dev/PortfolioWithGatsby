@@ -193,6 +193,10 @@ span {
   transition: var(--transition);
   font-family: 'Inter', sans-serif;
 }
+.hero-btn {
+  z-index: 100;
+  position: absolute;
+}
 .btn:hover {
   background-color: #23d997;
   color: white;
