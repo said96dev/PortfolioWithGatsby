@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous|Open+Sans|Roboto:400,700&display=swap&');
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: #189769;
@@ -633,13 +635,14 @@ Projects
 }
 .project-header span {
   margin-bottom: 1.5rem;
-  padding-right: 1rem;
+  padding-right: 0.56rem;
+  padding-left: 1rem;
 }
 .project-slug h3:hover {
   color: var(--clr-primary-5);
 }
 .project-desc {
-  word-spacing: 15px;
+  word-spacing: 2px;
   color: var(--clr-grey-3);
   background-color: #2b2b2b;
   padding: 1rem 2rem;
@@ -790,7 +793,7 @@ Contact Page
   display: grid;
   place-items: center;
   padding: 5rem 0;
-  background-color: #2b2b2b;
+  background-color: #1b1b1b;
 }
 .contact-form {
   background: transparent;

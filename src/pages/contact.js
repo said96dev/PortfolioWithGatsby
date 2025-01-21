@@ -33,11 +33,11 @@ const Contact = () => {
         animate='show'
       >
         <div className='contact-header'>
-          <h3>
+          <p className='text-xl font-semibold'>
             {' '}
             Feel free to Contact me by submitting the form below and I will get
-            back to you as soon as possible.
-          </h3>
+            back to you as soon as possiblee.
+          </p>
           <br />
           <h4>How can I help you?</h4>
         </div>
@@ -69,7 +69,7 @@ const Contact = () => {
             />
           </div>
           <div className='sub-div'>
-            <button type='submit' className='submit-btn btn center-btn'>
+            <button type='submit' className=' btn center-btn submit-btn'>
               submit here
             </button>
           </div>
