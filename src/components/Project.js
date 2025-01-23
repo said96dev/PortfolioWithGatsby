@@ -22,7 +22,7 @@ const Project = ({ url, description, image, github, stack, title, index }) => {
         className='project-img'
       />
       <div className='project-info'>
-        <div className='project-header'>
+        <div className='project-header  '>
           <span className='project-number'>0{index + 1}</span>
           <div className='project-slug'>
             <h3>{title}</h3>
@@ -35,7 +35,7 @@ const Project = ({ url, description, image, github, stack, title, index }) => {
             <span key={index}>{item}</span>
           ))}
         </div>
-        <div className='project-links'>
+        <div className='project-links flex'>
           <a href={github}>
             <FaGithubSquare className='project-icon' />
           </a>

@@ -636,7 +636,6 @@ Projects
 .project-header span {
   margin-bottom: 1.5rem;
   padding-right: 0.56rem;
-  padding-left: 1rem;
 }
 .project-slug h3:hover {
   color: var(--clr-primary-5);
