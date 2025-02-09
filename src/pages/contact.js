@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useForm, ValidationError } from '@formspree/react'
 import { Link } from 'gatsby'
-import { contactPageAnimation, photoAnim } from '../animation/animation'
+import { contactPageAnimation } from '../animation/animation'
 const Contact = () => {
   const [state, handleSubmit] = useForm('mayzdkpl')
   if (state.succeeded) {

@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
-import { titleAnim, fade } from '../animation/animation'
 import { motion } from 'framer-motion'
 import Particle from './Particle'
 
