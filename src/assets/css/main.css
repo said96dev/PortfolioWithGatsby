@@ -302,7 +302,6 @@ Hero
   margin-top: -5rem;
   padding-top: 5rem;
   height: 100vh;
-  position: relative;
 }
 
 .hero-center {
@@ -338,15 +337,6 @@ Hero
 }
 
 @media screen and (min-width: 992px) {
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 60%;
-    right: 0;
-    bottom: 0;
-    background: var(--clr-white);
-  }
   .hero-center {
     flex-direction: row;
   }
@@ -520,11 +510,11 @@ Jobs
 }
 .job-info h4 {
   text-transform: uppercase;
-  color: var(--clr-grey-1);
-  background: var(--clr-grey-10);
+  color: var(--clr-grey-10);
+  background: var(--clr-grey-1);
   display: inline-block;
   padding: 0.375rem 0.75rem;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .job-date {
   font-size: 0.75rem;
@@ -544,7 +534,25 @@ Jobs
 .job-icon {
   color: var(--clr-primary-5);
 }
+
 @media screen and (min-width: 992px) {
+  .perspective-container {
+    perspective: 1000px;
+    height: 300px; /* Passen Sie dies nach Bedarf an */
+  }
+
+  .job-card {
+    position: absolute;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+
+  .job-info {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
   .jobs-center {
     width: 90vw;
     display: grid;

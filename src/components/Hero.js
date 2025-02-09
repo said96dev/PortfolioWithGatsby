@@ -8,55 +8,78 @@ import Particle from './Particle'
 const Hero = ({ showHero }) => {
   return (
     showHero && (
-      <header className="hero">
+      <header className='hero relative h-screen flex items-center justify-center  bg-gradient-to-br from-[#1b1b1b] via-[#1b1b1b] to-[#2b2b2b] '>
         <Particle />
-        <section
-          className="hero-center section-center 
-      "
-        >
-          <div className="hero-info">
-            <div className="title">
-              <motion.div
-                variants={titleAnim}
-                className="underline"
-                initial="hidden"
-                animate="show"
-              ></motion.div>
-              <div className="hide">
-                <motion.h1 variants={titleAnim} initial="hidden" animate="show">
-                  I'm Said
-                </motion.h1>
-              </div>
-              <div className="hide">
-                <motion.h4 variants={titleAnim} initial="hidden" animate="show">
-                  Freelance
-                  <span className="hero-span"> Full Stack </span>
-                  Developer
-                </motion.h4>
-              </div>
-              <div className="hide">
-                <motion.p variants={titleAnim} initial="hidden" animate="show">
-                  Hi, I'm a Fullstack Developer specializing in building modern,
-                  scalable web applications with React, Node.js, and TypeScript.
-                  Let's create something amazing together.
-                </motion.p>
-              </div>
-            </div>
-            <motion.div variants={fade} initial="hidden" animate="show">
-              <Link to="/contact" className="btn hero-btn">
+        <div className='container mx-auto px-6 md:px-12 relative z-10 flex flex-col md:flex-row items-center'>
+          <div className='md:w-1/2 flex flex-col items-start justify-center'>
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className='font-bold text-4xl md:text-6xl tracking-tight mb-4 text-white'
+            >
+              I'm Said
+            </motion.h1>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className='text-2xl md:text-4xl leading-tight mb-6 text-white'
+            >
+              Freelance <span className='text-[#189769]'>Full Stack</span>{' '}
+              Developer
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className='text-lg md:text-xl mb-8 text-[#e6fff3]'
+            >
+              Hi, I'm a Fullstack Developer specializing in building modern,
+              scalable web applications with React, Node.js, and TypeScript.
+              Let's create something amazing together.
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+            >
+              <Link
+                href='/contact'
+                className=' bg-[#3b3b3b] text-[#189769] px-6 py-3 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-[#189769] hover:text-white hover:shadow-lg'
+              >
                 Contact me
               </Link>
             </motion.div>
           </div>
-          <motion.div initial="hidden" animate="show">
-            <StaticImage
-              className="hero-img"
-              src="../assets/images/hero.svg"
-              alt="Hero"
-              placeholder="blurred"
-            />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            className='md:w-1/2 flex justify-center items-center mt-8 md:mt-0'
+          >
+            <div className='w-full max-w-md bg-white rounded-lg shadow-2xl overflow-hidden'>
+              <div className='h-2 bg-[#23d997]'></div>
+              <div className='p-8 bg-[#2b2b2b]'>
+                <div className='flex items-center mb-4'>
+                  <div className='w-2 h-2 rounded-full bg-[#189769] mr-2'></div>
+                  <div className='w-2 h-2 rounded-full bg-[#1fc388] mr-2'></div>
+                  <div className='w-2 h-2 rounded-full bg-[#37dfa2]'></div>
+                </div>
+                <pre className='text-sm text-[#189769]'>
+                  <code>{`const said = {
+  skills: ['React', 'Node.js', 'TypeScript'],
+  passion: 'Building amazing web apps',
+  goal: 'Exceed client expectations'
+};
+
+// Let's collaborate!
+said.createAwesomeProject();`}</code>
+                </pre>
+              </div>
+            </div>
           </motion.div>
-        </section>
+        </div>
       </header>
     )
   )
