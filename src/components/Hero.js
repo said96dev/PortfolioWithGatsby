@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { motion } from 'framer-motion'
 import Particle from './Particle'
+import CodeSection from './CodeSection'
 
 const Hero = ({ showHero }) => {
   return (
@@ -56,26 +57,7 @@ const Hero = ({ showHero }) => {
             transition={{ duration: 0.5, delay: 0.8 }}
             className='md:w-1/2 flex justify-center items-center mt-8 md:mt-0'
           >
-            <div className='w-full max-w-md bg-white rounded-lg shadow-2xl overflow-hidden'>
-              <div className='h-2 bg-[#23d997]'></div>
-              <div className='p-8 bg-[#2b2b2b]'>
-                <div className='flex items-center mb-4'>
-                  <div className='w-2 h-2 rounded-full bg-[#189769] mr-2'></div>
-                  <div className='w-2 h-2 rounded-full bg-[#1fc388] mr-2'></div>
-                  <div className='w-2 h-2 rounded-full bg-[#37dfa2]'></div>
-                </div>
-                <pre className='text-sm text-[#189769]'>
-                  <code>{`const said = {
-  skills: ['React', 'Node.js', 'TypeScript'],
-  passion: 'Building amazing web apps',
-  goal: 'Exceed client expectations'
-};
-
-// Let's collaborate!
-said.createAwesomeProject();`}</code>
-                </pre>
-              </div>
-            </div>
+            <CodeSection />
           </motion.div>
         </div>
       </header>
