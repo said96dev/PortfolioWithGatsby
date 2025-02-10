@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 
 export const useTypingEffect = (text, typingSpeed = 50) => {
-  console.log('🚀 ~ useTypingEffect ~ text:', text)
   const [displayedText, setDisplayedText] = useState('')
   const [currentIndex, setCurrentIndex] = useState(0)
 
