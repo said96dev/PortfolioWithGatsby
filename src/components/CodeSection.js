@@ -14,7 +14,7 @@ said.createAwesomeProject();`
   const displayedText = useTypingEffect(codeString, 30)
 
   return (
-    <div className='w-full max-w-md bg-[#2b2b2b] rounded-lg shadow-2xl overflow-hidden'>
+    <div className='w-full max-w-md bg-[#2b2b2b] rounded-lg shadow-2xl overflow-hidden sr-only md:not-sr-only'>
       <div className='h-2 bg-[#23d997]'></div>
       <div className='p-8'>
         <div className='flex items-center mb-4'>
